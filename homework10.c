@@ -8,9 +8,6 @@
 
 int main() {
     FILE *genesis = fopen("genesis.txt", "r");
-    if (genesis == NULL) {
-        return 1;
-    }
 
     // Get the size of genesis.txt
     fseek(genesis, 0, SEEK_END);
